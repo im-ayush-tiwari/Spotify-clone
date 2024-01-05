@@ -1,0 +1,474 @@
+body{
+   font-family: 'Montserrat', sans-serif;
+   margin: 0;
+   background-color: black;
+   color: white;
+   overflow: hidden;
+}
+
+.main{
+    display: flex;
+    height: 100vh;
+    padding: 0.5rem;
+    margin-right: 0.5rem;
+}
+
+.sidebar{
+    background-color:black;
+    width: 300px;
+    border-radius: 1rem;
+    margin-right: 0.5rem;
+}
+
+.content{
+    background-color: #121212;
+    flex: 1;
+    border-radius: 1rem;
+    overflow: auto;
+    padding: 0 1rem 0 1rem;
+}
+
+.content::-webkit-scrollbar{
+    display: none;
+}
+
+.player{
+    background-color: #000;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    height: 90px;
+}
+
+a{
+    text-decoration: none;
+    color: white;
+}
+
+.nav{
+    background-color: #121212;
+    border-radius: 1rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 100px;
+    padding: 0.5rem 0.75rem;
+}
+
+.navop{
+    line-height: 2.5rem;
+    opacity: 0.7;
+    padding: 0.5rem 0.75rem;
+}
+
+.navop i{
+    font-size: 1.25rem;
+    margin-right: 1rem;
+}
+
+.navop a{
+    font-size: 1rem;
+}
+
+.navop:hover {
+    opacity: 1;
+}
+
+.library{
+    background-color: #121212;
+    border-radius: 1rem;
+    height: 100%;
+    margin-top: 0.5rem;
+    padding: 0.5rem 0.75rem;
+}
+
+.labop{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.libop img{
+    height: 1.25rem;
+    width: 1.25rem;
+    margin-right: 1rem;
+}
+
+.option{
+    font-size: 1.25rem;
+    display: flex;
+}
+
+.option i{
+    opacity: 0.7;
+    margin-right: 1rem;
+}
+
+.option i:hover{
+    opacity: 1;
+}
+
+.box{
+    background-color: #232323;
+    height: 8rem;
+    border-radius: 0.75rem;
+    margin: 0.75rem 0 0.75rem 0;
+    padding: 0.75rem 1rem;
+}
+
+.bp1{
+    font-size: 1rem;
+    font-weight: 500;
+}
+
+.bp2{
+    font-size: 0.85rem;
+    opacity: 0.9;
+}
+
+.badge{
+    background-color: white;
+    border: none;
+    border-radius: 100px;
+    padding: 0.25rem 1rem;
+    font-weight: 700;
+    margin-top: 0.5rem;
+    height: 2rem;
+    width: fit-content;
+    cursor: pointer;
+}
+
+.stick{
+    position: sticky;
+    top: 0;
+    background-color: #121212;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0.75rem 0 1.25rem 0;   
+    z-index: 10;
+}
+
+.navicon img{
+    margin-left: 0.25rem;
+    height: 1.25rem;
+    width: 1.25rem;
+}
+
+.stickop{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.stickop img{
+    height: 1.6rem;
+    width: 1.6rem;
+    border-radius: 50%;
+    transform: translate(0,-1.5px);
+}
+
+.navit{
+    margin-right: 1rem;
+}
+
+.darkbadge{
+    background-color: #000;
+    color: #fff;
+}
+
+@media (max-width: 1000px){
+    .hide{
+        display: none;
+    }
+}
+
+.cardslot{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: center;
+    padding-bottom: 1rem;
+}
+
+.slot{
+    display: flex;
+    background-color: #232323;
+    height: 3rem;
+    width: 295px;
+    border-radius: 0.3rem;
+    margin: 0.3rem 0.3rem;
+    cursor: pointer;
+}
+
+.slot img{
+    height: 100%;
+    border-radius: 0.3rem
+}
+
+.slotname{
+    font-weight: 600;
+    font-size: 0.75rem;
+    padding: 1rem;
+    padding-top: 1.1rem;
+    padding-left: 0.6rem;
+
+}
+
+.card{
+    background-color: #232323;
+    width: 150px;
+    border-radius: 0.5rem;
+    padding: 0.8rem;
+    margin-left: 1.5rem;
+    margin-top: 1rem;
+    cursor: pointer; 
+    min-width: 150px;   
+}
+
+.card:hover{
+    background-color: #2c2c2c;  
+}
+
+.slot:hover{
+    background-color: #2c2c2c;  
+}
+
+.cardrow{
+    display: flex;
+    overflow-x: auto;
+}
+
+.cardrow::-webkit-scrollbar{
+    display: none;
+}
+
+.cardimg{
+    width: 100%;
+    border-radius: 0.5rem
+}
+
+.artistcard{
+    border-radius: 50%;
+}
+
+.title{
+    font-weight: 600;
+    padding-top: 0.5rem;
+    padding-bottom: 0.75rem;
+}
+
+.info{
+    font-size: 0.75rem;
+    opacity: 0.8;
+
+}
+
+.album h2{
+    margin-top: 1rem;
+    margin-bottom: 0;
+}
+
+.footup{
+    padding:4rem 1.5rem;
+    font-size: 0.9rem;
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 2rem;
+}
+
+.heading{
+    font-weight: 600;
+}
+
+.footlink{
+    color: #a7a7a7;
+    cursor: pointer;
+}
+
+.contact i{
+    font-size: 1rem;
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.contact button{
+    height: 2.5rem;
+    width: 2.5rem;
+    background-color: #292929;
+    margin-left: 0.5rem ;
+    margin-right: 0.5rem ;
+}
+
+.footbar{
+    height: 240px;
+    border-top:1.1px solid #2c2c2c;
+    border-width: 80%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.linkfoot{
+    padding-top: 3rem;
+    padding-left: 1.5rem;
+}
+
+.tradem p{
+    font-size: 0.85rem;
+    color: #a7a7a7;
+    font-weight: 500;
+    display: flex;
+    justify-content: end;
+    margin-top: 3rem;
+    margin-right: 2.5rem;
+}
+
+.linkfoot span{
+    margin-right: 1rem;
+    font-size: 0.85rem;
+    color: #a7a7a7;
+    font-weight: 500;
+}
+
+.player{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.music{
+    width: 25%;
+}
+
+.play{
+    width: 50%;
+}
+
+.control{
+    width: 25%;
+}
+
+.playicon{
+    height: 1rem;
+    margin-right: 0.85rem;
+    margin-left: 0.85rem;
+    opacity: 0.7;
+}
+
+.playctrl{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 0.5rem;
+    cursor: pointer;
+}
+
+.playicon:hover{
+    opacity: 1;
+}
+
+.playback{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.prog{
+    width: 60%;
+    appearance: none;
+    background-color: transparent;
+    cursor: pointer;
+}
+
+.prog::-webkit-slider-runnable-track{
+    background-color: #ddd;
+    border-radius: 100px;
+    height: 0.2rem;
+
+}
+
+.prog::-webkit-slider-thumb{
+    appearance: none;
+    height: 0.7rem;
+    width: 0.7rem;
+    background-color: #fff;
+    border-radius: 50%;
+    margin-top: -4.5px;
+}
+
+.playback span{
+    font-size: 0.7rem;
+    color: #a7a7a7;
+}
+
+.music{
+    display: flex;
+    align-items: center;
+    padding-top: 0.7rem;
+}
+
+.artist{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.artist img{
+    height: 3.5rem;
+    height: 3.5rem;
+    border-radius: 5px;
+    margin-left: 0.5rem;
+    cursor: pointer;
+}
+
+.song p{
+    margin: 0.3rem;
+    padding-left: 0.7rem;
+    padding-right: 0.9rem;
+}
+
+.like img{
+    height: 1.35rem;
+    width: 1.35rem;
+    opacity: 0.8;
+    padding-left: 0.3rem;
+    cursor: pointer;
+}
+
+.control{
+    display: flex;
+    justify-content: right;
+    align-items: center;
+    padding-right: 1rem;
+}
+
+.volume{
+    width: 29%;
+    appearance: none;
+    background-color: transparent;
+    cursor: pointer;
+}
+
+.volume::-webkit-slider-runnable-track{
+    background-color: #ddd;
+    border-radius: 100px;
+    height: 0.2rem;
+
+}
+
+.volume::-webkit-slider-thumb{
+    appearance: none;
+    height: 0.7rem;
+    width: 0.7rem;
+    background-color: #fff;
+    border-radius: 50%;
+    margin-top: -4.5px;
+}
+
+.control img{
+    height: 2rem;
+    width: 2rem;
+    padding: 0.3rem;
+}
